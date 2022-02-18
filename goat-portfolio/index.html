@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Celdran | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/009c432c0f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/dalogoblack.png" />
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_GS0sEoNoxUcONSBGQQi7n");
+    })();
+    </script>
+</head>
+<body onmousewheel = "moveBackgroundScroll(event)">
+    <section id="landing-page"onmousemove = "moveBackground(event)" >
+        <nav>
+            <figure>
+                <img id = "personal-logo" src="./assets/dalogo.png" alt="">
+            </figure>
+            <ul class = "nav__link--list">
+                <li class = "nav__link" onclick="toggleModal()">
+                    <a class = 
+                    "nav__link--anchor 
+                    link__hover-effect
+                    link__hover-effect--black"
+                    href="#about">About</a>
+                </li>
+                <li class = "nav__link">
+                    <a class = 
+                    "nav__link--anchor 
+                    link__hover-effect
+                    link__hover-effect--black"
+                    href="#projects">Projects</a>
+                </li>
+                <li class = "nav__link" onclick="toggleModal()">
+                    <a class = 
+                    "nav__link--anchor 
+                    link__hover-effect
+                    link__hover-effect--black"
+                    href="#contacts">Contact</a>
+                </li>
+                <li class = "nav__link click" onclick ="toggleContrast()">
+                    <a class = 
+                    "nav__link--anchor 
+                    link__hover-effect
+                    link__hover-effect--black"
+                    href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+
+
+
+
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="title__typewriter">
+                <h1 class="title dynamic__title">I'm <b class = "red"> Van Celdran.</b></h1>
+            </div>
+            <div class= "header__content">
+                
+        
+                <p class="header__para">
+                    I'm a <b class = "red">Front End Developer </b> from Nevada, United States.
+                    <br>
+                    
+
+                </p>
+                <div class="header__para-2nd">
+                    <p>
+                        Here is a bit more <b class = "header__about red click" onclick="toggleModal()">about me.</b>
+                    </p>
+                </div>
+                
+                <div class="social__list">
+                    <a href="https://github.com/VanGits" target = "_blank" class="social__link click">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/van-celdran-8aa8a7227/"target = "_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="./assets/VC Resume.pdf" target = "_blank" class="social__link click">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+            <div class = "header__img--wrapper">
+                <img class = "header__img" src="./assets/undraw_programming_re_kg9v.svg" alt="">
+            </div>
+            
+
+
+        </header>
+        <a href="#">
+        <button class="mail__btn click " onclick = "toggleModal()">
+            <i class="fa-solid fa-envelope"></i>
+
+        </button>
+        </a>
+
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click "></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+                <h4 class=" modal__sub-title">Frontend Software Engineer.</h4>
+                <p class="modal__para">
+                I'm a 18 year-old <b class = "red">Front End Developer </b> in the United States. I have a consistent, great motivation to <b class = "red">learn </b> and <b class = "red">create web applications</b> that provide outstanding<b class = "red"> user experiences</b>.
+                <br>
+                Currently, I challenge myself regularly to difficult engineering problems that involve abstracts such as <b class = "red">
+                    API usage</b>, <b class = "red">handling state in React</b>, <b class = "red">CSS animations</b>, <b class = "red">CSS layouts</b>, and 
+                    <b class = "red">website responsiveness</b>.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language"> 
+                        <img class = "modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class = "modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class = "modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class = "modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
+                        <span class="language__name">React</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h4 class="modal__title modal__sub-title">
+                    I'm currently open to new opportunities.
+                </h4>
+                <form id = "contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form_item--label" >Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form_item--label" >Email</label>
+                        <input type="email" class="input" name="user_email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form_item--label" >Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+            
+        </div>
+        <img src="./assets/semi circle.svg" class = "shape shape--0">
+        <img src="./assets/circle.svg" class = "shape shape--1">
+        <img src="./assets/squiggly.svg" class = "shape shape--2">
+        <img src="./assets/circle.svg" class = "shape shape--3">
+        <img src="./assets/triangle.svg" class = "shape shape--4">
+        <img src="./assets/circle.svg" class = "shape shape--5">
+        <img src="./assets/squiggly.svg" class = "shape shape--6">
+        <img src="./assets/circle.svg" class = "shape shape--7">
+        <img src="./assets/semi circle.svg" class = "shape shape--8">
+    </section>
+
+    <section id = "projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class = "red">projects</span>
+
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur vitae asperiores soluta eveniet eos accusamus. Aut corporis voluptatibus excepturi aspernatur neque minus nihil vel expedita? Pariatur doloribus ipsum magni.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur vitae asperiores soluta eveniet eos accusamus. Aut corporis voluptatibus excepturi aspernatur neque minus nihil vel expedita? Pariatur doloribus ipsum magni.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur vitae asperiores soluta eveniet eos accusamus. Aut corporis voluptatibus excepturi aspernatur neque minus nihil vel expedita? Pariatur doloribus ipsum magni.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <a href="#" class="footer__anchor">
+                <figure class="footer__logo--img">
+                    <img class = "footer__logo--img" src="./assets/dalogo.png" alt="">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                  </span>
+                </a>
+                <div class="footer__social--list">
+                    <a href="https://github.com/VanGits" target = "_blank"class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                    Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/van-celdran-8aa8a7227/" target = "_blank"class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                    LinkedIn
+                    </a>
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    " onclick = "toggleModal()">
+                    Contact
+                    </a>
+                    <a href="./assets/VC Resume.pdf" target = "_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                    Resume
+                    </a>
+                </div>
+
+                <div class="footer__copyright">Copyright © 2022 Van Celdran</div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
