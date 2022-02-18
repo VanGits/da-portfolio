@@ -2,6 +2,7 @@
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20
+let y = window.scrollY * scaleFactor;
 
 function moveBackground (event) {
     const shapes = document.querySelectorAll(".shape");
@@ -13,6 +14,22 @@ function moveBackground (event) {
         const boolInt = isOdd ? -1 : 1;
         shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
     }
+}
+
+function moveBackgroundScroll (event) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY
+        
+        const shapes = document.querySelectorAll(".shape");
+        const y = scrolled * scaleFactor;
+        if (window.scrollY > 800) {
+            for (let i = 0; i < shapes.length; i++){
+                const isOdd = i % 2 !== 0;
+                const boolInt = isOdd ? -1 : 1;
+                shapes[i].style.transform = `translate(${y * boolInt}px, ${y * boolInt}px)`
+            }
+    }
+    })
 }
 
 function toggleContrast() {

@@ -16,8 +16,8 @@
     })();
     </script>
 </head>
-<body>
-    <section id="landing-page" onmousemove = "moveBackground(event)">
+<body onmousewheel = "moveBackgroundScroll(event)">
+    <section id="landing-page"onmousemove = "moveBackground(event)" >
         <nav>
             <figure>
                 <img id = "personal-logo" src="./assets/dalogo.png" alt="">
@@ -58,17 +58,24 @@
             </ul>
         </nav>
         <header class="header">
+            <div class="title__typewriter">
+                <h1 class="title dynamic__title">I'm <b class = "red"> Van Celdran.</b></h1>
+            </div>
             <div class= "header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title red">I'm Van.</h1>
+                
+        
                 <p class="header__para">
-                    I'm a <b class = "red">Frontend Software Engineer</b> who gladly seeks to build and 
-                    improve skills to the top. I enjoy making visually appealing 
-                    websites with  excellent <b class = "red" >user experiences</b>.
+                    I'm a <b class = "red">Front End Developer </b> from Nevada, United States.
                     <br>
-                    Here is a bit more <b class = "red click" onclick="toggleModal()">about me</b>.
+                    
 
                 </p>
+                <div class="header__para-2nd">
+                    <p>
+                        Here is a bit more <b class = "header__about red click" onclick="toggleModal()">about me.</b>
+                    </p>
+                </div>
+                
                 <div class="social__list">
                     <a href="https://github.com/VanGits" target = "_blank" class="social__link click">
                         <i class="fa-brands fa-github-square"></i>
@@ -82,8 +89,9 @@
                 </div>
             </div>
             <div class = "header__img--wrapper">
-                <img class = "header__img" src="./assets/undraw_web_developer_re_h7ie.svg" alt="">
+                <img class = "header__img" src="./assets/undraw_programming_re_kg9v.svg" alt="">
             </div>
+            
 
 
         </header>
