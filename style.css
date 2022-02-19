@@ -34,7 +34,7 @@ section {
 
 input, textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: #1f2020;
     color: white;
     outline: none;
     border: 1px solid #c0c4cc;
@@ -64,7 +64,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-    border-color: #a83030;
+    border-color: #dc6d61;
 }
 
 .container {
@@ -104,7 +104,7 @@ p {
 }
 
 .red {
-    color: #a83030 !important;
+    color: #dc6d61 !important;
     
     
 }
@@ -129,7 +129,7 @@ p {
 }
 
 .link__hover-effect--black:after{
-    background-color: #242424;
+    background-color: #1f2020;
 }
 
 .link__hover-effect:hover:after{
@@ -164,7 +164,7 @@ nav,
 }
 
 .dark-theme section {
-    background-color: #242424;
+    background-color: #1f2020;
 }
 
 .dark-theme #personal-logo {
@@ -181,11 +181,11 @@ nav,
 
 .dark-theme .mail__btn {
     background-color: white;
-    color: #242424;
+    color: #1f2020;
 }
 
 .dark-theme .dynamic__title b::after{
-    background: #242424;
+    background: #1f2020;
     transition: all 300ms ease;
 }
 
@@ -236,7 +236,7 @@ LANDING PAGE
     top: 2px;
     height: 100%;
     width: 100%;
-    border-left: 2px solid #a83030;
+    border-left: 2px solid #dc6d61;
     animation: typing 2s steps(15) infinite;
     transition: all 300ms ease;
 }
@@ -302,7 +302,7 @@ LANDING PAGE
 }
 
 .social__link {
-    background-color: #a83030;
+    background-color: #dc6d61;
     color: white;
     padding: 6px;
     width: 32px;
@@ -321,7 +321,7 @@ LANDING PAGE
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: #242424;
+    background-color: #1f2020;
     color: white;
     position: fixed;
     bottom: 32px;
@@ -341,7 +341,7 @@ LANDING PAGE
 .scroll__icon {
     width: 20px;
     height: 30px;
-    border: 2px solid #242424;
+    border: 2px solid #1f2020;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -352,7 +352,7 @@ LANDING PAGE
     content: "";
     width: 4px;
     height: 6px;
-    background-color: #242424;
+    background-color: #1f2020;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -404,7 +404,7 @@ nav {
 .nav__link--anchor {
     
     font-size: 16px;
-    color: #242424;
+    color: #1f2020;
     font-weight: 700;
 }
 
@@ -459,7 +459,7 @@ MODAL
 }
 
 .modal__contact {
-    background-color: #242424;
+    background-color: #1f2020;
     color: white;
     transform: translateX(110%);
    
@@ -519,8 +519,8 @@ MODAL
 }
 
 .form__submit{
-    background-color: #a83030;
-    border: 2px solid #a83030;
+    background-color: #dc6d61;
+    border: 2px solid #dc6d61;
     color: white;
     font-weight: 700;
     width: 100%;
@@ -536,8 +536,8 @@ MODAL
 }
 
 .form__submit:active{
-    border-color: #a83030;
-    color: #a83030;
+    border-color: #dc6d61;
+    color: #dc6d61;
 }
 
 
@@ -553,7 +553,7 @@ MODAL
     z-index: -1;
 }
 .modal__overlay--loading {
-    background-color: #242424;
+    background-color: #1f2020;
     font-size: 80px;
     
 }
@@ -684,7 +684,7 @@ FOOTER
 */
 
 footer {
-    background-color: #242424;
+    background-color: #1f2020;
     display: flex;
     padding: 6% 0;
     position: relative;
