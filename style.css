@@ -233,6 +233,7 @@ LANDING PAGE
     content: '';
     background: rgb(245, 245, 245);
     left: 0;
+    top: 2px;
     height: 100%;
     width: 100%;
     border-left: 2px solid #a83030;
@@ -261,6 +262,7 @@ LANDING PAGE
 }
 
 .header__para-2nd{
+
     text-align: center;
     animation: fontsize 1s alternate-reverse infinite;
 }
@@ -810,10 +812,13 @@ SHAPES
 /* Small phones */
 @media (max-width: 480px) {
     .title {
-        font-size: 32px;
+        font-size: 24px;
     }
     .header__para {
-        font-size: 18px;
+        font-size: 12px;
+    }
+    .header__para-2nd{
+        font-size: 8px;
     }
     .nav__link:first-child {
         display: none;
@@ -832,5 +837,13 @@ SHAPES
     }
     .modal__half {
         padding: 40px;
+    }
+    @keyframes fontsize {
+        0% {
+            transform: scale(0.7);
+        }
+        100% {
+            transform: scale(0.72);
+        }
     }
 }
