@@ -825,7 +825,9 @@ SHAPES
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
     .title {
-        font-size: 50px;
+        font-size: 52px;
+        margin: 0;
+        padding: 0;
     }
     .header__para {
         font-size: 16px;
@@ -853,7 +855,8 @@ SHAPES
 /* Small phones */
 @media (max-width: 480px) {
     .title {
-        font-size: 24px;
+        font-size: 40px;
+        margin: 0;
     }
     .header__para {
         font-size: 12px;
