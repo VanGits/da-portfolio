@@ -223,9 +223,14 @@ LANDING PAGE
     line-height: 90px;
     height: 90px;
     overflow: hidden;
+    animation: fade 650ms 400ms backwards;
 }
+
+
+
 .dynamic__title b {
     position: relative;
+    animation: fade 650ms 400ms backwards;
 }
 
 .dynamic__title b::after{
@@ -258,13 +263,25 @@ LANDING PAGE
     font-size: 18px;
     line-height: 2;
     max-width: 490px;
+    animation: fade 650ms 400ms backwards;
     
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header__para-2nd{
 
     text-align: center;
     animation: fontsize 1s alternate-reverse infinite;
+    animation: fade 650ms 400ms backwards;
 }
 .header__about{
     overflow: hidden;
@@ -286,11 +303,27 @@ LANDING PAGE
     top: 0%;
     bottom: 20%;
     transform: translateY(20%);
+    
 }
 
 .header__img{
     width: 500px;
     max-width: 100%;
+    animation: animation-img 800ms 200ms backwards;
+    
+}
+
+@keyframes animation-img {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1);
+    }
+
 }
 
 
@@ -299,6 +332,7 @@ LANDING PAGE
     margin-top: 16px;
     display: flex;
     justify-content: center;
+
 }
 
 .social__link {
@@ -313,6 +347,7 @@ LANDING PAGE
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: fade 650ms 400ms backwards;
 }
 
 .mail__btn {
@@ -328,6 +363,7 @@ LANDING PAGE
     right: 40px;
     z-index: 100;
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
+    animation: fade 650ms 400ms backwards;
 }
 
 .scroll {
@@ -335,6 +371,7 @@ LANDING PAGE
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    animation: fade 650ms 400ms backwards;
     
 }
 
@@ -598,6 +635,10 @@ MODAL
 PROJECTS  
 
 */
+
+.fading {
+    animation: animation-img 800ms 200ms backwards;
+}
 
 .project {
     margin-bottom: 200px;
