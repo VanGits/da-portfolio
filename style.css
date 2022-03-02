@@ -467,6 +467,15 @@ LANDING PAGE
     }
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+    background: #1c1d25;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(orange, #dc6d61);
+    border-radius: 5px;
+}
+
 /* 
 
 NAVIGATION  
