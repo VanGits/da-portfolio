@@ -147,7 +147,8 @@ nav,
 
 .modal--open nav,
 .modal--open .scroll,
-.modal--open .header {
+.modal--open .header,
+.modal--open .menu__backdrop {
     opacity: 0;
     visibility: hidden;
     transition: all 400ms;
@@ -189,6 +190,67 @@ nav,
     transition: all 300ms ease;
 }
 
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #dc6d61;
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #1c1d25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+.menu--open .menu__backdrop{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open{
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu--open .mail__btn{
+    display: none;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    font-size: 40px;
+    color: white;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
 
 
 /* 
@@ -200,6 +262,7 @@ LANDING PAGE
 #landing-page {
     min-height: 100vh;
 }
+
 
 .header{
     position: absolute;
@@ -309,7 +372,8 @@ LANDING PAGE
 .header__img{
     width: 500px;
     max-width: 100%;
-    animation: animation-img 800ms 200ms backwards;
+    animation: animation-img 800ms 800ms backwards;
+    margin: 0;
     
 }
 
@@ -402,6 +466,7 @@ LANDING PAGE
         transform: translateY(-3px);
     }
 }
+
 /* 
 
 NAVIGATION  
@@ -472,6 +537,11 @@ MODAL
     z-index: 60;
     box-shadow: 0 20px 80px 0px rgb(0, 0, 0, 0.55);
     visibility: visible;
+}
+
+.modal--open .menu--open .menu__backdrop{
+    display: none;
+    max-height: 200vh;
 }
 .modal__half {
     width: 50%;
@@ -644,6 +714,8 @@ PROJECTS
     margin-bottom: 200px;
 }
 
+
+
 .section__title{
     text-align: center;
     font-size: 48px;
@@ -663,6 +735,7 @@ PROJECTS
     border-radius: 20px;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow: hidden;
+    z-index: 50;
 }
 
 .project__wrapper:hover .project__description{
@@ -718,6 +791,26 @@ PROJECTS
     margin: 16px 0;
 }
 
+
+/*.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./assets/final1.svg');
+}
+
+.layer2 {
+    background-image: url('./assets/final.svg');
+   
+}*/
+
+
+
 /* 
 
 FOOTER  
@@ -766,6 +859,7 @@ SHAPES
 .shape--0{
     top: 15vh;
     left: 5vw;
+
 }
 
 .shape--1{
@@ -850,6 +944,17 @@ SHAPES
         width: 100%;
         max-width: 300px;
     }
+}
+
+@media (max-width: 550px) {
+    .nav__link--list{
+        display: none;
+    }
+    .btn__menu{
+        display: flex;
+    }
+    
+    
 }
 
 /* Small phones */

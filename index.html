@@ -22,6 +22,7 @@
             <figure>
                 <img id = "personal-logo" src="./assets/dalogo.png" alt="">
             </figure>
+           
             <ul class = "nav__link--list">
                 <li class = "nav__link" onclick="toggleModal()">
                     <a class = 
@@ -56,7 +57,34 @@
 
 
             </ul>
+            <button class = 'btn__menu click' onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class ="btn__menu btn__menu--close click" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class = 'menu__links'>
+                    <li class="menu__list">
+                        <a href="#" class = 'menu__link click' onclick="toggleModalMenu()">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#projects" class = 'menu__link click' onclick="closeMenu()">Projects</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class = 'menu__link click'  onclick="toggleModalMenu()">Contact</a>
+                    </li>
+                    <li class = "menu__list">
+                        <a href="#" class = 'menu__link click'  onclick="toggleContrastMenu()"><i class="fa-solid fa-circle-half-stroke click"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            
         </nav>
+        
         <header class="header">
             <div class="title__typewriter" >
                 <h1 class="title dynamic__title">I'm <b class = "red"> Van Celdran.</b></h1>
@@ -72,7 +100,7 @@
                 </p>
                 <div class="header__para-2nd">
                     <p>
-                        Here is a bit more <b class = "header__about red click" onclick="toggleModal()">about me.</b>
+                        Here is a bit more <b class = "header__about red click"  onclick="toggleModal()">about me.</b>
                     </p>
                 </div>
                 
@@ -101,7 +129,7 @@
 
         </button>
         </a>
-
+        
         <a href="#projects" class="scroll">
             <div class="scroll__icon click "></div>
         </a>
@@ -179,9 +207,10 @@
         <img src="./assets/circle.svg" class = "shape shape--7">
         <img src="./assets/semi circle.svg" class = "shape shape--8">
     </section>
-
     <section id = "projects">
+        
         <div class="container">
+            
             <div class="row">
                 <h1 class="section__title">
                     Here are some of my <span class = "red">projects</span>
@@ -190,14 +219,14 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/wow.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    E-Commerce Website
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, React
+                                    HTML | CSS | JavaScript | React
                                 </h4>
                                 <p class="project__description--para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur vitae asperiores soluta eveniet eos accusamus. Aut corporis voluptatibus excepturi aspernatur neque minus nihil vel expedita? Pariatur doloribus ipsum magni.
@@ -217,13 +246,13 @@
 
                     </li>
 
-                    <li class="project">
+                    <li  class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/traveljournal.PNG" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    Travel Journal Website
                                 </h3>
                                 <h4 class="project__description--sub-title">
                                     HTML, CSS, JavaScript, React

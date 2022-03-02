@@ -4,6 +4,18 @@ let contrastToggle = false;
 const scaleFactor = 1 / 20
 let y = window.scrollY * scaleFactor;
 
+document.addEventListener('swiped-up', function(e) {
+    console.log(e.target); // the element that was swiped
+});
+function openMenu() {
+    document.body.classList += ' menu--open'
+
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open')
+}
+
 function moveBackground (event) {
     const shapes = document.querySelectorAll(".shape");
     const x = event.clientX * scaleFactor;
@@ -40,8 +52,21 @@ function toggleContrast() {
     else {
         document.body.classList.remove("dark-theme")
     }
+
     
 
+}
+
+function toggleContrastMenu() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+        document.body.classList.remove("menu--open")
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+        document.body.classList.remove("menu--open")
+    }
 }
 
 function contact(event) {
@@ -78,4 +103,14 @@ function toggleModal () {
     }
     isModalOpen = true;
     document.body.classList += " modal--open"
+}
+
+function toggleModalMenu () {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open") 
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open"
+    document.body.classList.remove('menu--open')
 }
