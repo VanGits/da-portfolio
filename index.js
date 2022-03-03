@@ -47,7 +47,7 @@ function moveBackgroundScroll (event) {
 function touchMove (event) {
     window.addEventListener('touchmove', () => {
         const shapes = document.querySelectorAll(".shape");
-        const y = window.scrollY * scaleFactorMobile;
+        const y = window.ontouchmove * scaleFactorMobile;
         if (window.scrollY) {
             for (let i = 0; i < shapes.length; i++){
                 const isOdd = i % 2 !== 0;
@@ -57,6 +57,7 @@ function touchMove (event) {
     }
     })
 }
+
 
 
 function toggleContrast() {
