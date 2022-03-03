@@ -365,12 +365,12 @@ LANDING PAGE
 .header__img--wrapper {
     top: 0%;
     bottom: 20%;
-    transform: translateY(20%);
+    transform: translateY(10%);
     
 }
 
 .header__img{
-    width: 500px;
+    width: 700px;
     max-width: 100%;
     animation: animation-img 800ms 800ms backwards;
     margin: 0;
@@ -951,7 +951,7 @@ SHAPES
     }
     .header__img{
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
     }
 }
 
