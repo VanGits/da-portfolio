@@ -2,11 +2,11 @@
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20
+const scaleFactorMobile = 1/10;
 let y = window.scrollY * scaleFactor;
 
-document.addEventListener('swiped-up', function(e) {
-    console.log(e.target); // the element that was swiped
-});
+
+
 function openMenu() {
     document.body.classList += ' menu--open'
 
@@ -31,9 +31,9 @@ function moveBackground (event) {
 function moveBackgroundScroll (event) {
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY
-        
         const shapes = document.querySelectorAll(".shape");
         const y = scrolled * scaleFactor;
+        console.log(window.scrollY)
         if (window.scrollY > 800) {
             for (let i = 0; i < shapes.length; i++){
                 const isOdd = i % 2 !== 0;
@@ -43,6 +43,21 @@ function moveBackgroundScroll (event) {
     }
     })
 }
+// mobile scroll event
+function touchMove (event) {
+    window.addEventListener('touchmove', () => {
+        const shapes = document.querySelectorAll(".shape");
+        const y = window.scrollY * scaleFactorMobile;
+        if (window.scrollY) {
+            for (let i = 0; i < shapes.length; i++){
+                const isOdd = i % 2 !== 0;
+                const boolInt = isOdd ? -1 : 1;
+                shapes[i].style.transform = `translate(${y * boolInt}px, ${y * boolInt}px)`
+            }
+    }
+    })
+}
+
 
 function toggleContrast() {
     contrastToggle = !contrastToggle;
