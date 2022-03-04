@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/009c432c0f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/dalogoblack.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="index.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -211,13 +212,13 @@
         
         <div class="container">
             
-            <div class="row">
+            <div data-aos="fade-in" class="row">
                 <h1 class="section__title">
                     Here are some of my <span class = "red">projects</span>
 
                 </h1>
                 <ul class="project__list">
-                    <li class="project">
+                    <li data-aos="fade-right"class="project">
                         <div class="project__wrapper">
                             <img src="./assets/e-commerce.PNG" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -246,7 +247,7 @@
 
                     </li>
 
-                    <li  class="project">
+                    <li data-aos="fade-left" class="project">
                         <div class="project__wrapper">
                             <img src="./assets/traveljournal.PNG" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -275,7 +276,7 @@
 
                     </li>
 
-                    <li class="project">
+                    <li data-aos="fade-right" class="project">
                         <div class="project__wrapper">
                             <img src="./assets/blinker mockup.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -311,7 +312,7 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div data-aos="fade-up"class="container">
             <div class="row footer__row">
                 <a href="#" class="footer__anchor">
                 <figure class="footer__logo--img">
@@ -358,5 +359,9 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

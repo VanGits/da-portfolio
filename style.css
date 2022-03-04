@@ -326,8 +326,12 @@ LANDING PAGE
     font-size: 18px;
     line-height: 2;
     max-width: 490px;
-    animation: fade 650ms 400ms backwards;
     
+    
+}
+
+.header__content {
+    animation: fade 650ms 400ms backwards;
 }
 @keyframes fade {
     0% {
@@ -344,7 +348,6 @@ LANDING PAGE
 
     text-align: center;
     animation: fontsize 1s alternate-reverse infinite;
-    animation: fade 650ms 400ms backwards;
 }
 .header__about{
     overflow: hidden;
@@ -357,7 +360,7 @@ LANDING PAGE
         transform: scale(1);
     }
     100% {
-        transform: scale(1.02);
+        transform: scale(1.05);
     }
 }
 
@@ -370,7 +373,7 @@ LANDING PAGE
 }
 
 .header__img{
-    width: 680px;
+    width: 400px;
     max-width: 100%;
     animation: animation-img 800ms 800ms backwards;
     margin: 0;
