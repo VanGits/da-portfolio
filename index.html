@@ -212,7 +212,7 @@
         
         <div class="container">
             
-            <div data-aos="fade-in" class="row">
+            <div  data-aos="fade-right" data-aos-delay = "50" class="row">
                 <h1 class="section__title">
                     Here are some of my <span class = "red">projects</span>
 
@@ -361,7 +361,10 @@
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+    AOS.init({
+        delay: 250,
+        once: true
+    });
     </script>
 </body>
 </html>
