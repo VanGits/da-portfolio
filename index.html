@@ -17,7 +17,7 @@
     })();
     </script>
 </head>
-<body ontouchmove="touchMove(event)"  onmousewheel = "moveBackgroundScroll(event)" >
+<body onload="moveBackgroundScroll(event)" >
     <section id="landing-page" onmousemove = "moveBackground(event)" >
         <nav>
             <figure>
@@ -211,7 +211,7 @@
         <img src="./assets/circle.svg" class = "shape shape--7">
         <img src="./assets/semi circle.svg" class = "shape shape--8">
     </section>
-    <section id = "projects">
+    <section id = "projects" onmousewheel = "moveBackgroundScroll(event)" >
         
         <div class="container">
             
