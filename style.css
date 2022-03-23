@@ -727,6 +727,7 @@ PROJECTS
 
 .project {
     margin-bottom: 200px;
+    
 }
 
 
@@ -735,11 +736,13 @@ PROJECTS
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    
 }
 
 .project__img {
     width: 100%;
-    transform: all 1000ms ease;
+    transition: all 500ms ease;
+    
   
 }
 
@@ -751,20 +754,27 @@ PROJECTS
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow: hidden;
     z-index: 50;
+    transition: all 500ms ease;
+    
 }
 
 .project__wrapper:hover .project__description{
     opacity: 1;
     transform: translateY(-50%);
+    
 }
 
 .project__wrapper:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
+    
+
 }
 
 .project__wrapper:hover .project__wrapper--bg{
     opacity: 0.7;
+    
+    
 
 }
 .project__description {
@@ -871,6 +881,7 @@ SHAPES
 
 .shape {
     position: fixed;
+    
     
 }
 
