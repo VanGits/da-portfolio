@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    -webkit-overflow-scrolling: touch; 
 }
 
 html {
@@ -866,13 +867,17 @@ footer {
 SHAPES  
 
 */
+
+
 .shape {
     position: fixed;
+    
 }
 
 .shape--0{
     top: 15vh;
     left: 5vw;
+    
 
 }
 

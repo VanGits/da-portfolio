@@ -15,7 +15,7 @@ function closeMenu() {
     document.body.classList.remove('menu--open')
 }
 
-/*function moveBackground(event) {
+function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape");
     const x = event.clientX * scaleFactor;
     const y = event.clientY * scaleFactor;
@@ -25,7 +25,7 @@ function closeMenu() {
         const boolInt = isOdd ? -1 : 1;
         shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
     }
-}*/
+}
 
 function moveBackgroundScroll (event) {
     window.addEventListener('scroll', touchMove => {
