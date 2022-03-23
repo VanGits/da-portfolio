@@ -43,6 +43,7 @@ function moveBackgroundScroll (event) {
     }
     })
 }
+requestAnimationFrame(moveBackgroundScroll)
 
 
 
