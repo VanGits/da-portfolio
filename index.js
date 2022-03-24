@@ -29,6 +29,7 @@ function moveBackground(event) {
 
 function moveBackgroundScroll (event) {
     window.addEventListener('scroll', touchMove => {
+        {passive:true}
         const scrolled = window.scrollY
         const shapes = document.querySelectorAll(".shape");
         const y = scrolled * scaleFactorMobile;
