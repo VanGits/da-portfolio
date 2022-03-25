@@ -191,6 +191,7 @@ nav,
 .dark-theme .dynamic__title b::after{
     background: #1f2020;
     transition: all 300ms ease;
+    border-left: 2px solid white;
 }
 
 .btn__menu {
@@ -381,6 +382,7 @@ LANDING PAGE
     position: absolute;
     content: '';
     background: rgb(245, 245, 245);
+    white-space: nowrap;
     left: 0;
     top: 2px;
     height: 100%;
