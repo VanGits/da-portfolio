@@ -263,6 +263,7 @@ LOADER
     background: #dc6d61;
     height: 100%;
     width: 100%;
+    max-width: 1100px;
     position: fixed;
     display: flex;
     justify-content: center;
