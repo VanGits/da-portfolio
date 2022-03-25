@@ -253,8 +253,72 @@ nav,
     color: white;
 }
 
+/* 
 
+LOADER
 
+*/
+
+.preloader{
+    background: #dc6d61;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    animation: loaderAnimation 5s forwards;
+    z-index: 1000;
+
+    
+    
+}
+
+.loader__logo {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    transition: all 300ms ease;
+    animation: loaderAnimation 5s forwards;
+    animation: logoAnimation 2s alternate-reverse infinite;
+   
+    
+   
+}
+
+@keyframes loaderAnimation{
+    0%{
+        opacity: 1;
+        z-index: 1000;
+        
+    
+    }
+    80%{
+        opacity: 1;
+        z-index: 1000;
+        
+    }
+    100%{
+        
+        z-index: -1;
+        opacity: 0;
+        
+
+    }
+}
+
+@keyframes logoAnimation{
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 /* 
 
@@ -504,7 +568,7 @@ nav {
 
 }
 
-#personal-logo {
+.personal-logo {
     width: 50px;
     height: 50px;
     filter: invert(1);

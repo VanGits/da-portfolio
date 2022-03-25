@@ -17,11 +17,16 @@
     })();
     </script>
 </head>
-<body onload="moveBackgroundScroll(event)" >
-    <section id="landing-page" onmousemove = "moveBackground(event)" >
+
+<body>
+    <div class="preloader">
+        <img class="loader__logo" src="./assets/dalogoblack.png" alt="">
+    </div>
+    
+    <section id="landing-page"  onload="moveBackgroundScroll(event)" onmousemove = "moveBackground(event)" >
         <nav>
             <figure>
-                <img id = "personal-logo" src="./assets/dalogo.png" alt="">
+                <img class = "personal-logo" src="./assets/dalogo.png" alt="">
             </figure>
            
             <ul class = "nav__link--list">
