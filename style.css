@@ -271,7 +271,7 @@ LOADER
     justify-content: center;
     align-items: center;
     transition: all 300ms ease;
-    animation: loaderAnimation 1000ms forwards;
+    animation: loaderAnimation 1s forwards;
     z-index: 1000;
     overflow-y: hidden;
     
