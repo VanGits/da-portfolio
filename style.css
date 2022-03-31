@@ -296,14 +296,14 @@ LOADER
     0%{
       
         z-index: 1000;
-        
+        opacity: 1;
         
     
     }
     80%{
       
         z-index: 1000;
-        left: 0;
+        opacity: 1;
     
         
     }
@@ -311,7 +311,7 @@ LOADER
         
         z-index: -1;
         
-        left: 100%;
+        opacity: 0;
        
         
 
@@ -1060,6 +1060,12 @@ SHAPES
     .header__img{
         width: 100%;
         max-width: 300px;
+    }
+}
+
+@media (max-height: 667px){
+    .shape{
+        display: none;
     }
 }
 
